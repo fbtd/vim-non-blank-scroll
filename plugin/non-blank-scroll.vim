@@ -14,7 +14,7 @@ function! s:scroll(step)
     let cur_lnum = pos[1]
     let cur_col = pos[2]
 
-    let last_lnum = a:step > 0 ? getpos('$')[1] : 1
+    let last_lnum = a:step > 0 ? getpos('$')[1] + 1 : 0
     let distance = 0
 
     let cur_lnum += a:step
